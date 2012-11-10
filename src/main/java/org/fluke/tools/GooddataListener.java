@@ -1,0 +1,66 @@
+
+package org.fluke.tools;
+
+import org.antlr.v4.runtime.tree.*;
+import org.antlr.v4.runtime.Token;
+
+public interface GooddataListener extends ParseTreeListener<Token> {
+	void enterBy_clause(GooddataParser.By_clauseContext ctx);
+	void exitBy_clause(GooddataParser.By_clauseContext ctx);
+	void enterFact_name(GooddataParser.Fact_nameContext ctx);
+	void exitFact_name(GooddataParser.Fact_nameContext ctx);
+	void enterQuery(GooddataParser.QueryContext ctx);
+	void exitQuery(GooddataParser.QueryContext ctx);
+	void enterAttribute(GooddataParser.AttributeContext ctx);
+	void exitAttribute(GooddataParser.AttributeContext ctx);
+	void enterValue_list(GooddataParser.Value_listContext ctx);
+	void exitValue_list(GooddataParser.Value_listContext ctx);
+	void enterMetric_form(GooddataParser.Metric_formContext ctx);
+	void exitMetric_form(GooddataParser.Metric_formContext ctx);
+	void enterQuery_form(GooddataParser.Query_formContext ctx);
+	void exitQuery_form(GooddataParser.Query_formContext ctx);
+	void enterQuery_condition(GooddataParser.Query_conditionContext ctx);
+	void exitQuery_condition(GooddataParser.Query_conditionContext ctx);
+	void enterIn_condition(GooddataParser.In_conditionContext ctx);
+	void exitIn_condition(GooddataParser.In_conditionContext ctx);
+	void enterAttribute_element_uri(GooddataParser.Attribute_element_uriContext ctx);
+	void exitAttribute_element_uri(GooddataParser.Attribute_element_uriContext ctx);
+	void enterAttribute_element(GooddataParser.Attribute_elementContext ctx);
+	void exitAttribute_element(GooddataParser.Attribute_elementContext ctx);
+	void enterAgg_form(GooddataParser.Agg_formContext ctx);
+	void exitAgg_form(GooddataParser.Agg_formContext ctx);
+	void enterAttribute_uri(GooddataParser.Attribute_uriContext ctx);
+	void exitAttribute_uri(GooddataParser.Attribute_uriContext ctx);
+	void enterBy_attribute(GooddataParser.By_attributeContext ctx);
+	void exitBy_attribute(GooddataParser.By_attributeContext ctx);
+	void enterWithout_pf_clause(GooddataParser.Without_pf_clauseContext ctx);
+	void exitWithout_pf_clause(GooddataParser.Without_pf_clauseContext ctx);
+	void enterAll_other(GooddataParser.All_otherContext ctx);
+	void exitAll_other(GooddataParser.All_otherContext ctx);
+	void enterFact_uri(GooddataParser.Fact_uriContext ctx);
+	void exitFact_uri(GooddataParser.Fact_uriContext ctx);
+	void enterCondition(GooddataParser.ConditionContext ctx);
+	void exitCondition(GooddataParser.ConditionContext ctx);
+	void enterWhere_clause(GooddataParser.Where_clauseContext ctx);
+	void exitWhere_clause(GooddataParser.Where_clauseContext ctx);
+	void enterAttribute_element_name(GooddataParser.Attribute_element_nameContext ctx);
+	void exitAttribute_element_name(GooddataParser.Attribute_element_nameContext ctx);
+	void enterAttribute_name(GooddataParser.Attribute_nameContext ctx);
+	void exitAttribute_name(GooddataParser.Attribute_nameContext ctx);
+	void enterConditions(GooddataParser.ConditionsContext ctx);
+	void exitConditions(GooddataParser.ConditionsContext ctx);
+	void enterAttribute_condition(GooddataParser.Attribute_conditionContext ctx);
+	void exitAttribute_condition(GooddataParser.Attribute_conditionContext ctx);
+	void enterFact(GooddataParser.FactContext ctx);
+	void exitFact(GooddataParser.FactContext ctx);
+	void enterWhat(GooddataParser.WhatContext ctx);
+	void exitWhat(GooddataParser.WhatContext ctx);
+	void enterMetric(GooddataParser.MetricContext ctx);
+	void exitMetric(GooddataParser.MetricContext ctx);
+	void enterBy_all_in_all(GooddataParser.By_all_in_allContext ctx);
+	void exitBy_all_in_all(GooddataParser.By_all_in_allContext ctx);
+	void enterAttribute_list(GooddataParser.Attribute_listContext ctx);
+	void exitAttribute_list(GooddataParser.Attribute_listContext ctx);
+	void enterCount_form(GooddataParser.Count_formContext ctx);
+	void exitCount_form(GooddataParser.Count_formContext ctx);
+}

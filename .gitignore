@@ -1,6 +1,7 @@
 *.clj#
 *.class
 *.clj~
-
+.*
+target
 
 
